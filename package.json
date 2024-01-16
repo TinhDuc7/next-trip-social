@@ -1,0 +1,36 @@
+{
+  "name": "social-backend",
+  "version": "1.0.0",
+  "description": "travel-sharing-social",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index",
+    "watch":"console-ninja nodemon watch index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinhDuc7/next-trip-social_BE.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "TD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TinhDuc7/next-trip-social_BE/issues"
+  },
+  "homepage": "https://github.com/TinhDuc7/next-trip-social_BE#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
