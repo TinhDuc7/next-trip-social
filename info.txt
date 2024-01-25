@@ -1,0 +1,5 @@
+mongodb server
+id: nexttripsocial
+pass: rivqxd0sEN8sPigz
+
+link connect: mongodb+srv://nexttripsocial:<password>@nts.aifbaix.mongodb.net/

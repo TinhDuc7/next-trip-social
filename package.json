@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index",
-    "watch":"console-ninja nodemon watch index"
+    "start":"node src/index.js",
+    "watch":"console-ninja nodemon watch src/index.js"
   },
   "repository": {
     "type": "git",
