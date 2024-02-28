@@ -3,18 +3,22 @@ require('dotenv').config()
 const express = require('express');
 const app = express();
 const port = process.env.PORT;
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const db = require('./config/db')
+const router = require('./routes/index');
 
 db.connect();
 
-// app.get('/', (req, res) => {
-//     res.send('Hello World!')
-//     res.send('Check merge')
-//     res.send('Test git')
-// })
+app.use(bodyParser.json({ limit: '10mb' }));
+app.use(bodyParser.urlencoded({limit:'10mb', extended: true}))
+
+app.use(cors());
+
+app.use('/', router);
 
 
 app.listen(port, () => {
     console.log(`App listening on port ${port}`)
-})
+}) 
