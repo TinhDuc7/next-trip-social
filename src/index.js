@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({limit:'10mb', extended: true}))
 
 app.use(cors());
 
-app.use('/', router);
+app.use('/api/v1', router);
 
 
 app.listen(port, () => {
