@@ -18,6 +18,5 @@ const comparePasswords = (plainPassword, encryptedPassword) => {
 
 module.exports = {
     encryptPassword,
-    decryptPassword,
     comparePasswords,
 }
